@@ -1,8 +1,12 @@
 {
-  "name": "stock",
+  "name": "product-store",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "developer": {
+    "name": "Dagmawi Teka",
+    "github": "https://github.com/Dagmawi-22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
