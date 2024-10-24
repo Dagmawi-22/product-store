@@ -1,1 +1,1 @@
-# product-store
+# inventory-ui
