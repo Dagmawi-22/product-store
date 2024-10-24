@@ -2,6 +2,7 @@ export const products = [
   {
     id: 1,
     name: "Samsung S21",
+    category: "Phone",
     price: "$799.99",
     description:
       "Experience the epic new Galaxy S21 with cutting-edge features and a sleek design.",
@@ -11,6 +12,7 @@ export const products = [
   {
     id: 2,
     name: "Apple iPhone 13",
+    category: "Phone",
     price: "$999.99",
     description:
       "The latest iPhone 13 with advanced camera technology and a powerful A15 Bionic chip.",
@@ -20,6 +22,7 @@ export const products = [
   {
     id: 3,
     name: "Sony WH-1000XM4",
+    category: "Phone",
     price: "$349.99",
     description:
       "Industry-leading noise-canceling headphones with superior sound quality and comfort.",
@@ -29,6 +32,7 @@ export const products = [
   {
     id: 4,
     name: "Apple MacBook Pro",
+    category: "Laptop",
     price: "$1299.99",
     description:
       "The new MacBook Pro with the powerful M1 chip, offering exceptional performance and battery life.",
@@ -38,6 +42,7 @@ export const products = [
   {
     id: 5,
     name: "Dell XPS 13",
+    category: "Desktop",
     price: "$1099.99",
     description:
       "The Dell XPS 13, a high-performance laptop with a stunning 4K display and sleek design.",
@@ -47,6 +52,7 @@ export const products = [
   {
     id: 6,
     name: "Sony PlayStation 5",
+    category: "Play Station",
     price: "$499.99",
     description:
       "The latest Sony PlayStation 5 console with ultra-high-speed SSD and immersive gaming experience.",
