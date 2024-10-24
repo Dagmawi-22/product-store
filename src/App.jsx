@@ -8,7 +8,7 @@ import { Heading, Text } from "@radix-ui/themes";
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState(products);
-  const [cartItems, setCartItems] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     if (selectedCategory === "all") {
@@ -20,8 +20,14 @@ const App = () => {
     }
   }, [selectedCategory]);
 
-  const handleAddToCart = () => {
-    setCartItems((prevCartItems) => prevCartItems + 1);
+  const handleAddToCart = (productId) => {
+    setCartItems((prevCartItems) => {
+      if (prevCartItems.includes(productId)) {
+        return prevCartItems.filter((id) => id !== productId);
+      } else {
+        return [...prevCartItems, productId];
+      }
+    });
   };
 
   const uniqueCategories = [
@@ -30,14 +36,13 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen bg-black py-10 px-4 flex flex-col items-center">
-      <Cart itemCount={cartItems} />
+      <Cart itemCount={cartItems.length} />
       <Heading mb="2" size="6" className="font-bold text-center text-white">
         Our Products
       </Heading>
       <Text className="text-lg font-bold text-center mb-10 text-gray-500">
         Look what we can get you
       </Text>
-
       <Filter
         categories={uniqueCategories}
         selectedCategory={selectedCategory}
@@ -53,7 +58,11 @@ const App = () => {
               animationName: "fadeIn",
             }}
           >
-            <ProductCard product={product} onAddToCart={handleAddToCart} />
+            <ProductCard
+              product={product}
+              onAddToCart={() => handleAddToCart(product.id)}
+              isInCart={cartItems.includes(product.id)}
+            />
           </div>
         ))}
       </div>
