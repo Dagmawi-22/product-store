@@ -7,6 +7,7 @@
 ##### node.js
 
 ### How to run?
+#### Sequentially execute the below commands & fianally open your browser with url https://localhost:5173
 
 ```bash
 git clone https://github.com/Dagmawi-22/product-store.git
@@ -21,4 +22,3 @@ npm install
 npm run dev
 ```
 
-#### https://localhost:5173
