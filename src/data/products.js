@@ -5,7 +5,7 @@ export const products = [
     category: "Phone",
     price: "$799.99",
     description:
-      "Experience the epic new Galaxy S21 with cutting-edge features and a sleek design.",
+      "Experience the epic Galaxy S21 with cutting-edge features and sleek design.",
     image:
       "https://dirigible.com.ng/wp-content/uploads/2022/03/samsung-tab-a7lite.jpg",
   },
@@ -15,7 +15,7 @@ export const products = [
     category: "Phone",
     price: "$999.99",
     description:
-      "The latest iPhone 13 with advanced camera technology and a powerful A15 Bionic chip.",
+      "The latest iPhone 13 with advanced camera tech and a powerful A15 Bionic chip.",
     image:
       "https://dirigible.com.ng/wp-content/uploads/2022/03/iphone-13-pro-max-gold-select.png",
   },
